@@ -8,6 +8,7 @@ namespace simpleGame
 {
     public class logicClass
     {
+        //variables as integer
         public int load_position;
         public int spin_position;
         public int shoot_position;
@@ -18,6 +19,8 @@ namespace simpleGame
             load_position = 1;
         }
 
+        //code to select the random chances from  1 to 6 
+
         public int spin()
         {
             Random rnd_obj = new Random();
@@ -25,6 +28,7 @@ namespace simpleGame
             return spin_position;
         }
 
+        //code to choose the random chances from  1 to 6 and not goes to 7 chance or 0 chance
         public int shoot()
         {
             if (load_position == spin_position)
